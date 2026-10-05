@@ -9,7 +9,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /** One-step interface: select a photo, then automatically create verified Java. */
 public class AutomaticStudio extends JFrame {
-    static final String VERSION="0.2.0";
+    static final String VERSION="0.2.1";
     final JLabel status=new JLabel("Choose an image or drop one onto the portrait preview to begin.");
     final JComboBox<String> quality=new JComboBox<>(new String[]{"Quick (560 px)","Balanced (800 px)","Fine (1000 px)"});
     final JComboBox<String> maximumLines=new JComboBox<>(new String[]{"500", "1000", "2000", "5000", "10000", "No limit"});
@@ -255,3 +255,4 @@ public class AutomaticStudio extends JFrame {
         throw new IllegalArgumentException("Enter 300 to 100000 lines, or select No limit.");
     }
 }
+
