@@ -1,10 +1,10 @@
 # Portrait Studio
 
-Version 0.2.0 for Windows x64. Convert a reference image into a standalone Java 2D drawing program using local, non-neural image processing.
+Version 0.2.1 for Windows x64. Convert a reference image into a standalone Java 2D drawing program using local, non-neural image processing.
 
 ## Start here
 
-1. Open `PortraitStudio-0.2.0-Windows-x64.msi` and follow the installation wizard.
+1. Open `PortraitStudio-0.2.1-Windows-x64.msi` and follow the installation wizard.
 2. Launch **Portrait Studio** from the Start menu or desktop shortcut.
 3. Drop one image onto the portrait preview and choose a Java destination.
 4. Review the rendered portrait, Java source, and technique report. Adjust settings and select **Regenerate** when needed.
@@ -28,3 +28,4 @@ The application aims to use ten graphics technique families meaningfully. Image 
 The release ZIP contains the Windows installer, editable application source, documentation, checksums, and the corresponding OpenJDK source archive. Preserve the third-party notices and corresponding source when redistributing this bundle. The synthetic example contains no user photograph.
 
 Original application code is released under MIT; bundled components retain their own licenses. See `LICENSE.txt`, `THIRD_PARTY_NOTICES.md`, and `PRIVACY.md`. The Windows installer is unsigned. This release has been prepared locally and has not been published to a hosting service.
+

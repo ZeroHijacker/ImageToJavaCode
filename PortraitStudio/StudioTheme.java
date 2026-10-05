@@ -17,6 +17,7 @@ final class StudioTheme {
         UIManager.put("Button.gradient",java.util.List.of(0f,0f,background,background,background));
         UIManager.put("CheckBox.gradient",java.util.List.of(0f,0f,background,background,background));
         UIManager.put("control",background);UIManager.put("text",surface);
+        UIManager.put("OptionPane.messageForeground",text);
         UIManager.put("TabbedPane.selected",surface);
         SwingUtilities.updateComponentTreeUI(window);
         recolor(window.getContentPane(),background,surface,text,muted);

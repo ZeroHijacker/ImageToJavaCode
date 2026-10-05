@@ -57,11 +57,10 @@ final class CourseExporter {
         String drawn=variable;
         if(m.angle!=0) {
             // Obtain the pivot from the unrotated geometry, exactly as the renderer does.
-            PortraitRuntime.Mark unrotated=new PortraitRuntime.Mark(m.type,m.rgb,m.stroke,m.fill,0,m.label,p);
-            Rectangle2D bounds=PortraitRuntime.geometry(unrotated).getBounds2D();
             lines.add("        Rectangle2D bounds"+id+" = "+variable+".getBounds2D();");
-            lines.add("        AffineTransform rotation"+id+" = new AffineTransform();");
-            lines.add("        rotation"+id+".rotate(");
+            // Use the same factory as PortraitRuntime: translate/rotate/translate
+            // can round differently at antialiased pixel boundaries.
+            lines.add("        AffineTransform rotation"+id+" = AffineTransform.getRotateInstance(");
             lines.add("                Math.toRadians("+number(m.angle)+"),");
             lines.add("                bounds"+id+".getCenterX(), bounds"+id+".getCenterY()");
             lines.add("        );");
